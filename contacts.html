@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/adaptive.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0b22311d60.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+	<script src="scripts/jquery-3.6.0.min.js"></script>
+	<link rel="shortcut icon" type="image/png" href="https://static.insales-cdn.com/assets/1/3684/1412708/v_1643910298/favicon.png">
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick-theme.css"/>
+	<link  href="plugins/fotorama-4.6.4/fotorama.css" rel="stylesheet">
+	<script src="plugins/fotorama-4.6.4/fotorama.js"></script>
+	<title>Wirl X - контакты</title>
+</head>
+<body>
+	<div class="container-contacts">
+		<div class="header__wrapper header__wrapper_dark-bg">
+			<div class="header__logo"><a href="index.html"> <img src="img/logo.png" alt="logo"></a></div>
+			<div class="header__menu">
+				<ul class="header__menu-items">
+					<li class="header__menu-item menu__dropdown-items_emersion"><a href="catalog.html">Каталог</a>
+						<ul class="menu__dropdown-items">
+							<li><a href="#"><div class="menu__dropdown-item"> <img src="img/menu-icons/clocks.jpeg" alt="clocks"><span>Украшения и часы</span></div></a></li>
+							<li><a href="#"><div class="menu__dropdown-item"><img src="img/menu-icons/shoes.jpg" alt="shoes"><span>Обувь</span></div></a></li>
+							<li><a href="#"><div class="menu__dropdown-item"><img src="img/menu-icons/bag.jpg" alt="bag"><span>Сумки</span></div></a></li>
+							<li><a href="#"><div class="menu__dropdown-item"><img src="img/menu-icons/cap.jpg" alt="cap"><span>Кепки</span></div></a></li>
+							<li><a href="#"><div class="menu__dropdown-item"><img src="img/menu-icons/glases.jpg" alt="glases"><span>Очки</span></div></a></li>
+						</ul>
+					</li>
+					<li class="header__menu-item"><a href="delivery.html">Доставка</a></li>
+					<li class="header__menu-item"><a href="contacts.html">Контакты</a></li>
+					<li class="header__menu-item"><a href="#">Lookbooks</a></li>
+					<li class="header__menu-item"><a href="#">Сравнение</a></li>
+					</ul>
+			</div>
+			<div class="header__icons">
+				<a href="#"><i class="fas fa-heart"></i></a>
+				<a href="#"><i class="fas fa-map-marker"></i></a>
+				<a href="#"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+			<div class="header__menu-items_burger">
+					<a href="javascript: showBurger();" class="burger-menu__button"><i class="fa-solid fa-bars"></i></a>
+					<ul class="burger-menu__list">
+						<li class="header__menu-item_burger"><a href="catalog.html">Каталог</a></li>
+						<li class="header__menu-item_burger"><a href="delivery.html">Доставка</a></li>
+						<li class="header__menu-item_burger"><a href="contacts.html">Контакты</a></li>
+						<li class="header__menu-item_burger"><a href="#">Lookbooks</a></li>
+						<li class="header__menu-item_burger"><a href="#">Сравнение</a></li>
+					</ul>
+					</div>
+		</div>
+		<div class="contacts__main">
+		<div class="contacts-wrapper">
+			<div class="contacts__title">
+				<h1>Контакты</h1>
+			</div>
+			<div class="contacts__info">
+				<div class="contacts__work-time contacts__info_style"><i class="fa-regular	 fa-clock"></i>
+					<h2>Время работы</h2>
+					<span>(ПН-СБ): 9.00 до 19.00</span>
+					<span>(Воскресенье): Выходной</span>
+				</div>
+				<div class="contacts__adress contacts__info_style"><i 	class="fa-regular fa-map"></i>
+					<h2>Где нас найти?</h2>
+					<span>Республика Беларусь</span>
+					<span>г. Минск пр. Партизанский д.20</span>
+				</div>
+				<div class="contacts__email contacts__info_style"><i 	class="fa-regular fa-envelope"></i>
+					<h2>Контакты</h2>
+					<span><a href="tel:">Тел:+358 46 964-40-33</a> </span>
+					<span><a href="mailto:">Email: kaliarovich93@gmail.com</a> </span>
+				</div>
+			</div>
+		</div>	
+			<div class="feedback">
+				<div class="feedback__title"><h2>Обратная связь</h2></div>
+			<div class="feedback__form-wrapper">
+				<div class="feedback__form">
+                	<div class="form-group">
+                   	 	<label for="firstname" class="form-label">Ваше имя:</label>
+                   		 <div class="form-input">
+                        <input id="firstname" name="name" type="text" class="form-control name" placeholder="Введите ваше имя">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label class="form-label" for="email">Ваш email:</label>
+                    <div class="form-input">
+                        <input type="email" name="email" id="email" class="form-control email" placeholder="Введите адрес вашей почты">
+                    </div>
+                </div>
+                  <div class="form-group">
+                   	<label for="phone" class="form-label">Ваш телефон:</label>
+                    <div class="form-input">
+                    <input id="phone" name="phone" type="tel" class="form-control phone" placeholder="Введите номер телефона">
+                    	</div>
+                	</div>
+				</div>
+									<div class="form-group">
+                    <label for="message" class="form-label">Ваше сообщение:</label>
+                    <div class="message-input">
+                    <textarea name="message" id="message" class="message" placeholder="Введите текст сообщения" style="resize: none;"></textarea>
+                    </div>
+                </div>
+                <div class="feedback__button">
+                	<button>Отправить</button>
+                </div>
+			</div>
+			</div>
+		</div>
+		</div>		
+		<div class="footer">
+			 <form method="get" class="mailing-list">
+			 	<span><i class="fa-solid fa-envelope"></i></span>
+         <input type="email" name="email-
+					mailing" placeholder="Подписаться на рассылку" autocomplete="email">
+				<button type="submit"><span>
+				<i class="fa-solid fa-share"></i></span></button>
+                </form>
+			<div class="footer__wrapper">
+				<div class="footer__wrapper-items">
+					<div class="footer__wrapper-item">Покупателям
+					<ul class="footer__wrapper-links">
+						<li><a href="#"> Доставка</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Возврат товара</a></li>
+						<li><a href="#">Личный кабинет</a></li>
+					</ul>
+					</div>
+				</div>
+			    <div class="footer__wrapper-items">
+			    	<div class="footer__wrapper-item">Информация
+					<ul class="footer__wrapper-links">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Обратная связь</a></li>
+					</ul>
+					</div>
+				</div>
+				<div class="footer__wrapper-items">
+					<ul class="footer__wrapper-social">
+						<li><a href="https://twitter.com"> <i class="fab fa-twitter"></i></a></li>
+						<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">Wirl X <i class="far fa-copyright"></i> 2022</div>
+		</div>
+		<script src="plugins/slick-1.8.1/slick/slick.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>

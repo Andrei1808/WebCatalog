@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/adaptive.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0b22311d60.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap"
+		rel="stylesheet">
+	<script src="scripts/jquery-3.6.0.min.js"></script>
+	<link rel="shortcut icon" type="image/png"
+		href="https://static.insales-cdn.com/assets/1/3684/1412708/v_1643910298/favicon.png">
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick-theme.css" />
+	<link href="plugins/fotorama-4.6.4/fotorama.css" rel="stylesheet">
+	<script src="plugins/fotorama-4.6.4/fotorama.js"></script>
+	<title>Wirl X - каталог</title>
+</head>
+
+<body>
+	<div class="container-catalog">
+		<div class="header__wrapper header__wrapper_dark-bg">
+			<div class="header__logo"><a href="index.html"> <img src="img/logo.png" alt="logo"></a></div>
+			<div class="header__menu">
+				<ul class="header__menu-items">
+					<li class="header__menu-item menu__dropdown-items_emersion"><a href="catalog.html">Каталог</a>
+						<ul class="menu__dropdown-items">
+							<li><a href="#">
+									<div class="menu__dropdown-item"> <img src="img/menu-icons/clocks.jpeg"
+											alt="clocks"><span>Украшения и часы</span></div>
+								</a></li>
+							<li><a href="#">
+									<div class="menu__dropdown-item"><img src="img/menu-icons/shoes.jpg"
+											alt="shoes"><span>Обувь</span></div>
+								</a></li>
+							<li><a href="#">
+									<div class="menu__dropdown-item"><img src="img/menu-icons/bag.jpg"
+											alt="bag"><span>Сумки</span></div>
+								</a></li>
+							<li><a href="#">
+									<div class="menu__dropdown-item"><img src="img/menu-icons/cap.jpg"
+											alt="cap"><span>Кепки</span></div>
+								</a></li>
+							<li><a href="#">
+									<div class="menu__dropdown-item"><img src="img/menu-icons/glases.jpg"
+											alt="glases"><span>Очки</span></div>
+								</a></li>
+						</ul>
+					</li>
+					<li class="header__menu-item"><a href="delivery.html">Доставка</a></li>
+					<li class="header__menu-item"><a href="contacts.html">Контакты</a></li>
+					<li class="header__menu-item"><a href="#">Lookbooks</a></li>
+					<li class="header__menu-item"><a href="#">Сравнение</a></li>
+				</ul>
+			</div>
+			<div class="header__icons">
+				<a href="#"><i class="fas fa-heart"></i></a>
+				<a href="#"><i class="fas fa-map-marker"></i></a>
+				<a href="#"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+			<div class="header__menu-items_burger">
+				<a href="javascript: showBurger();" class="burger-menu__button"><i class="fa-solid fa-bars"></i></a>
+				<ul class="burger-menu__list">
+					<li class="header__menu-item_burger"><a href="catalog.html">Каталог</a></li>
+					<li class="header__menu-item_burger"><a href="delivery.html">Доставка</a></li>
+					<li class="header__menu-item_burger"><a href="contacts.html">Контакты</a></li>
+					<li class="header__menu-item_burger"><a href="#">Lookbooks</a></li>
+					<li class="header__menu-item_burger"><a href="#">Сравнение</a></li>
+				</ul>
+			</div>
+		</div>
+		<aside class="sidebar">
+			<div class="sidebar__wrapper">
+				<div class="sidebar__block">
+					<div class="sidebar__block-title">ФИЛЬТР</div>
+					<div class="sidebar__block-items">
+						<ul>
+							<li class="sidebar__block-item">
+								<div class="sidebar__list-title"><span>Цвет</span></div>
+								<ul class="sidebar__list-items">
+									<li><input type="checkbox" name="color" id="color_1" value="small"><label
+											for="color_1">Золотой</label></li>
+									<li><input type="checkbox" name="color" id="color_2" value="small"><label
+											for="color_2">Синий</label></li>
+									<li><input type="checkbox" name="color" id="color_3" value="small"><label
+											for="color_3">Мульти</label></li>
+									<li><input type="checkbox" name="color" id="color_4" value="small"><label
+											for="color_4">Серебрянный</label></li>
+									<li><input type="checkbox" name="color" id="color_5" value="small"><label
+											for="color_5">Черный</label></li>
+								</ul>
+							</li>
+							<li class="sidebar__block-item">
+								<div class="sidebar__list-title"><span>Материал</span></div>
+								<ul class="sidebar__list-items">
+									<li><input type="checkbox" name="color" id="material_1" value="small"><label
+											for="material_1">Хлопок</label></li>
+									<li><input type="checkbox" name="color" id="material_2" value="small"><label
+											for="material_2">Натуральная кожа</label></li>
+								</ul>
+							</li>
+							<li class="sidebar__block-item">
+								<div class="sidebar__list-title"><span>Бренд</span></div>
+								<ul class="sidebar__list-items">
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="brand_1" value="small"><label for="brand_1">Adidas</label></li>
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="brand_2" value="small"><label for="brand_2">Emporio Armani</label></li>
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="brand_3" value="small"><label for="brand_3">Boss</label></li>
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="brand_4" value="small"><label for="brand_4">Simon Carterк</label></li>
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="brand_5" value="small"><label for="brand_5">Icon brand</label></li>
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="brand_6" value="small"><label for="brand_6">Paul Smith</label></li>
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="brand_7" value="small"><label for="brand_7">Tommy Hilfiger</label></li>
+								</ul>
+							</li>
+							<li class="sidebar__block-item">
+								<div class="sidebar__list-title"><span>Размер</span></div>
+								<ul class="sidebar__list-items">
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="size_1" value="small"><label for="size_1">S</label></li>
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="size_2" value="small"><label for="size_2">M</label></li>
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="size_3" value="small"><label for="size_3">L</label></li>
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="size_4" value="small"><label for="size_4">XL</label></li>
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="size_5" value="small"><label for="size_5">XXL</label></li>
+									<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+											id="size_6" value="small"><label for="size_6">One size</label></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<div class="sidebar_bottom">
+			<div class="sidebar__block">
+				<div class="sidebar__block-title sidebar__block-title_bottom" onclick="show()">ФИЛЬТР</div>
+				<div class="sidebar__block-items sidebar__block-items_bottom">
+					<ul>
+						<li class="sidebar__block-item">
+							<div class="sidebar__list-title"><span>Цвет</span></div>
+							<ul class="sidebar__list-items">
+								<li><input type="checkbox" name="color" id="color-1" value="small"><label
+										for="color_1">Золотой</label></li>
+								<li><input type="checkbox" name="color" id="color-2" value="small"><label
+										for="color_2">Синий</label></li>
+								<li><input type="checkbox" name="color" id="color-3" value="small"><label
+										for="color_3">Мульти</label></li>
+								<li><input type="checkbox" name="color" id="color-4" value="small"><label
+										for="color_4">Серебрянный</label></li>
+								<li><input type="checkbox" name="color" id="color-5" value="small"><label
+										for="color_5">Черный</label></li>
+							</ul>
+						</li>
+						<li class="sidebar__block-item">
+							<div class="sidebar__list-title"><span>Материал</span></div>
+							<ul class="sidebar__list-items">
+								<li><input type="checkbox" name="color" id="material-1" value="small"><label
+										for="material_1">Хлопок</label></li>
+								<li><input type="checkbox" name="color" id="material-2" value="small"><label
+										for="material_2">Натуральная кожа</label></li>
+							</ul>
+						</li>
+						<li class="sidebar__block-item">
+							<div class="sidebar__list-title"><span>Бренд</span></div>
+							<ul class="sidebar__list-items">
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+										id="brand-1" value="small"><label for="brand_1">Adidas</label></li>
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+										id="brand-2" value="small"><label for="brand_2">Emporio Armani</label></li>
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+										id="brand-3" value="small"><label for="brand_3">Boss</label></li>
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+										id="brand-4" value="small"><label for="brand_4">Simon Carterк</label></li>
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+										id="brand-5" value="small"><label for="brand_5">Icon brand</label></li>
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+										id="brand-6" value="small"><label for="brand_6">Paul Smith</label></li>
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color"
+										id="brand-7" value="small"><label for="brand_7">Tommy Hilfiger</label></li>
+							</ul>
+						</li>
+						<li class="sidebar__block-item">
+							<div class="sidebar__list-title"><span>Размер</span></div>
+							<ul class="sidebar__list-items">
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color" id="size-1"
+										value="small"><label for="size_1">S</label></li>
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color" id="size-2"
+										value="small"><label for="size_2">M</label></li>
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color" id="size-3"
+										value="small"><label for="size_3">L</label></li>
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color" id="size-4"
+										value="small"><label for="size_4">XL</label></li>
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color" id="size-5"
+										value="small"><label for="size_5">XXL</label></li>
+								<li class="sidebar__list-items_dropdown"><input type="checkbox" name="color" id="size-6"
+										value="small"><label for="size_6">One size</label></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="collection">
+			<div class="collection__menu-page">
+				<a href="index.html" class="collection__menu-page home-page">Главная</a>
+				<span>/</span>
+				<span>Каталог</span>
+
+			</div>
+			<div class="collection__title">
+				<h1 class="collection__title">Каталог</h1>
+			</div>
+			<div class="collection__sorting">
+				<div class="sorting_by-option">
+					<label for="order" class="sorting_by-label">Сортировать</label>
+					<div class="style_select-wrapper">
+						<select name="order" id="order" class="sorting_by-select">
+							<option value="default">По умолчанию</option>
+							<option value="price">По цене</option>
+							<option value="alphabet">По алфавиту</option>
+							<option value="newFirts">Новые - старые</option>
+							<option value="oldFirst">Старые - новые</option>
+						</select>
+					</div>
+				</div>
+				<div class="sorting_by-option">
+					<label for="page-size" class="sorting_by-label">Показывать на странице</label>
+					<div class="style_select-wrapper">
+						<select name="page-size" id="page-size" class="sorting_by-select">
+							<option value="18">18</option>
+							<option value="24">24</option>
+							<option value="36">36</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="collection__list-items">
+				<div class="collection__list-item">
+					<img src="img/catalog-img/adidas-1.jpeg" alt="adidas-1">
+					<img src="img/catalog-img/adidas-2.jpeg" alt="adidas-2" class="collection__list-item_second-state">
+					<div class="list-item__description">
+						<p>Adidas Z02 Process</p>
+						<p><span class="old-price">140&#8364;</span>
+							<span class="current-price">100&#8364;</span>
+						</p>
+					</div>
+					<div class="list-item__sale">
+						<span>-29%</span>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/cap-red1.jpg" alt="acap-red1">
+					<img src="img/catalog-img/cap-red2.jpg" class="collection__list-item_second-state" alt="cap-red2">
+					<div class="list-item__description">
+						<p>Black Baseball Cap</p>
+						<p>
+							<span class="current-price">30&#8364;</span>
+						</p>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/shoes1.jpg" alt="shoes1">
+					<img src="img/catalog-img/shoes2.jpg" class="collection__list-item_second-state" alt="shoes2">
+					<div class="list-item__description">
+						<p>Zip cowboy ankle boots</p>
+						<p>
+							<span class="current-price">99&#8364;</span>
+						</p>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/Armani1.jpeg" alt="armani1">
+					<img src="img/catalog-img/Armani2.jpeg" class="collection__list-item_second-state" alt="armani2">
+					<div class="list-item__description">
+						<p>Emporio Armani Aviator</p>
+						<p>
+							<span class="current-price">30&#8364;</span>
+						</p>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/glasses1.jpg" alt="glasses1">
+					<img src="img/catalog-img/glases2.jpg" class="collection__list-item_second-state" alt="glasses2">
+					<div class="list-item__description">
+						<p>Blue Round Sunglasses</p>
+						<p>
+							<span class="old-price">35&#8364;</span>
+							<span class="current-price">30&#8364;</span>
+						</p>
+					</div>
+					<div class="list-item__sale">
+						<span>-15%</span>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/blue-cap1.jpg" alt="blue-cap1">
+					<img src="img/catalog-img/blue-cap2.jpg" class="collection__list-item_second-state" alt="blue-cap2">
+					<div class="list-item__description">
+						<p>Blue Baseball Cap</p>
+						<p>
+							<span class="current-price">40&#8364;</span>
+						</p>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/ring-armani1.jpeg" alt="ring-armani1">
+					<img src="img/catalog-img/ring-armani2.jpeg" class="collection__list-item_second-state"
+						alt="ring-armani2">
+					<div class="list-item__description">
+						<p>Серебристое кольцо Emporio Armani</p>
+						<p>
+							<span class="current-price">110&#8364;</span>
+						</p>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/blue-ring1.jpg" alt="blue-ring1">
+					<img src="img/catalog-img/blue-ring2.jpg" class="collection__list-item_second-state"
+						alt="blue-ring2">
+					<div class="list-item__description">
+						<p>Serge DeNimes Dove</p>
+						<p>
+							<span class="old-price">85&#8364;</span>
+							<span class="current-price">70&#8364;</span>
+						</p>
+					</div>
+					<div class="list-item__sale">
+						<span>-18%</span>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/glufflinks-black1.jpg" alt="glufflinks-black1">
+					<img src="img/catalog-img/glufflinks-black2.jpg" class="collection__list-item_second-state"
+						alt="glufflinks-black1">
+					<div class="list-item__description">
+						<p>Золотистые запонки DesignB</p>
+						<p>
+							<span class="old-price">25&#8364;</span>
+							<span class="current-price">20&#8364;</span>
+						</p>
+					</div>
+					<div class="list-item__sale">
+						<span>-20%</span>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/leather-bag1.jpg" alt="leather-bag1">
+					<img src="img/catalog-img/leather-bag2.jpg" class="collection__list-item_second-state"
+						alt="leather-bag2">
+					<div class="list-item__description">
+						<p>Brown Leather Bag</p>
+						<p>
+							<span class="current-price">30&#8364;</span>
+						</p>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/cap-yellow1.jpg" alt="cap-yellow1">
+					<img src="img/catalog-img/cap-yellow2.jpg" class="collection__list-item_second-state"
+						alt="cap-yellow2">
+					<div class="list-item__description">
+						<p>Vintage Baseball Cap</p>
+						<p>
+							<span class="current-price">25&#8364;</span>
+						</p>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/glufflinks-colors1.jpeg" alt="glufflinks-colors1">
+					<img src="img/catalog-img/glufflinks-colors2.jpeg" class="collection__list-item_second-state"
+						alt="glufflinks-colors2">
+					<div class="list-item__description">
+						<p>Запонки в полоску Paul Smith</p>
+						<p>
+							<span class="current-price">95&#8364;</span>
+						</p>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/yellow-glasses1.jpg" alt="yellow-glasses1">
+					<img src="img/catalog-img/yellow-glasses2.jpg" class="collection__list-item_second-state"
+						alt="yellow-glasses2">
+					<div class="list-item__description">
+						<p>Yellow Sunglasses</p>
+						<p>
+							<span class="old-price">25&#8364;</span>
+							<span class="current-price">20&#8364;</span>
+						</p>
+					</div>
+					<div class="list-item__sale">
+						<span>-20%</span>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/earring-anchor1.jpg" alt="earring-anchor1">
+					<img src="img/catalog-img/earring-anchor2.jpg" class="collection__list-item_second-state"
+						alt="earring-anchor2">
+					<div class="list-item__description">
+						<p>Серебряные серьги-кольца Simon Carter</p>
+						<p>
+							<span class="current-price">35&#8364;</span>
+						</p>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/necklace1.jpeg" alt="necklace1">
+					<img src="img/catalog-img/necklace2.jpeg" class="collection__list-item_second-state"
+						alt="necklace2">
+					<div class="list-item__description">
+						<p>Серебристое ожерелье с подвеской</p>
+						<p>
+							<span class="current-price">30&#8364;</span>
+						</p>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/black-glasses1.jpg" alt="black-glasses1">
+					<img src="img/catalog-img/black-glasses2.jpg" class="collection__list-item_second-state"
+						alt="black-glasses2">
+					<div class="list-item__description">
+						<p>Black Round Sunglasses</p>
+						<p>
+							<span class="old-price">25&#8364;</span>
+							<span class="current-price">15&#8364;</span>
+						</p>
+					</div>
+					<div class="list-item__sale">
+						<span>-40%</span>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/earring-armani1.jpg" alt="earring-armani1">
+					<img src="img/catalog-img/earring-armani2.jpg" class="collection__list-item_second-state"
+						alt="earring-armani2">
+					<div class="list-item__description">
+						<p>Серьги-гвоздики Emporio Armani</p>
+						<p>
+							<span class="current-price">95&#8364;</span>
+						</p>
+					</div>
+				</div>
+				<div class="collection__list-item">
+					<img src="img/catalog-img/silver-ring1.jpeg" alt="silver-ring1">
+					<img src="img/catalog-img/silver-ring2.jpeg" class="collection__list-item_second-state"
+						alt="silver-ring1">
+					<div class="list-item__description">
+						<p>Кольцо-печатка</p>
+						<p>
+							<span class="current-price">10&#8364;</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__wrapper-items">
+					<div class="footer__wrapper-item">Покупателям
+						<ul class="footer__wrapper-links">
+							<li><a href="#"> Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Возврат товара</a></li>
+							<li><a href="#">Личный кабинет</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__wrapper-items">
+					<div class="footer__wrapper-item">Информация
+						<ul class="footer__wrapper-links">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Обратная связь</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__wrapper-items">
+					<ul class="footer__wrapper-social">
+						<li><a href="https://twitter.com"> <i class="fab fa-twitter"></i></a></li>
+						<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">Wirl X <i class="far fa-copyright"></i> 2022</div>
+		</div>
+	</div>
+	<script src="plugins/slick-1.8.1/slick/slick.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>

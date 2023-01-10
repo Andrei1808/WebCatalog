@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/adaptive.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0b22311d60.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+	<script src="scripts/jquery-3.6.0.min.js"></script>
+	<link rel="shortcut icon" type="image/png" href="https://static.insales-cdn.com/assets/1/3684/1412708/v_1643910298/favicon.png">
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="plugins/slick-1.8.1/slick/slick-theme.css"/>
+	<link  href="plugins/fotorama-4.6.4/fotorama.css" rel="stylesheet">
+	<script src="plugins/fotorama-4.6.4/fotorama.js"></script>
+	<title>Wirl X</title>
+</head>
+<body>
+	<div class="container-productInfo">
+	<div class="header__wrapper header__wrapper_dark-bg">
+			<div class="header__logo"><a href="index.html"> <img src="img/logo.png" alt="logo"></a></div>
+			<div class="header__menu">
+				<ul class="header__menu-items">
+					<li class="header__menu-item menu__dropdown-items_emersion"><a href="catalog.html">Каталог</a>
+						<ul class="menu__dropdown-items">
+							<li><a href="#"><div class="menu__dropdown-item"> <img src="img/menu-icons/clocks.jpeg" alt="clocks"><span>Украшения и часы</span></div></a></li>
+							<li><a href="#"><div class="menu__dropdown-item"><img src="img/menu-icons/shoes.jpg" alt="shoes"><span>Обувь</span></div></a></li>
+							<li><a href="#"><div class="menu__dropdown-item"><img src="img/menu-icons/bag.jpg" alt="bag"><span>Сумки</span></div></a></li>
+							<li><a href="#"><div class="menu__dropdown-item"><img src="img/menu-icons/cap.jpg" alt="cap"><span>Кепки</span></div></a></li>
+							<li><a href="#"><div class="menu__dropdown-item"><img src="img/menu-icons/glases.jpg" alt="glases"><span>Очки</span></div></a></li>
+						</ul>
+					</li>
+					<li class="header__menu-item"><a href="delivery.html">Доставка</a></li>
+					<li class="header__menu-item"><a href="contacts.html">Контакты</a></li>
+					<li class="header__menu-item"><a href="#">Lookbooks</a></li>
+					<li class="header__menu-item"><a href="#">Сравнение</a></li>
+					</ul>
+			</div>
+			<div class="header__icons">
+				<a href="#"><i class="fas fa-heart"></i></a>
+				<a href="#"><i class="fas fa-map-marker"></i></a>
+				<a href="#"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+			<div class="header__menu-items_burger">
+					<a href="javascript: showBurger();" class="burger-menu__button"><i class="fa-solid fa-bars"></i></a>
+					<ul class="burger-menu__list">
+						<li class="header__menu-item_burger"><a href="catalog.html">Каталог</a></li>
+						<li class="header__menu-item_burger"><a href="delivery.html">Доставка</a></li>
+						<li class="header__menu-item_burger"><a href="contacts.html">Контакты</a></li>
+						<li class="header__menu-item_burger"><a href="#">Lookbooks</a></li>
+						<li class="header__menu-item_burger"><a href="#">Сравнение</a></li>
+					</ul>
+					</div>
+	</div>
+
+	<div class="productInfo-wrapper">
+		<div class="productInfo__grid-wrapper">
+		<div class="productInfo__gallery">
+			<div class="fotorama" data-nav="thumbs" data-autoplay="3000"
+			data-width="100%" data-maxheight="90%">
+			 <a href="img/productInfo-gallery/1big.jpeg"><img src="img/productInfo-gallery/1.jpeg" alt="productInfo1"></a>
+			<a href="img/productInfo-gallery/2big.jpeg"><img src="img/productInfo-gallery/2.jpeg" alt="productInfo2" ></a>
+			<a href="img/productInfo-gallery/3big.jpeg"><img src="img/productInfo-gallery/3.jpeg" alt="productInfo3" ></a>
+			<a href="img/productInfo-gallery/4big.jpeg"><img src="img/productInfo-gallery/4.jpeg" alt="productInfo4" ></a>
+			<a href="img/productInfo-gallery/5big.jpeg"><img src="img/productInfo-gallery/5.jpeg"  alt="productInfo5" ></a>
+			<a href="img/productInfo-gallery/6big.jpeg"><img src="img/productInfo-gallery/6.jpeg" alt="productInfo6" ></a>
+		</div>
+	</div>
+		<div class="productInfo__info">
+			<div class="porductInfo__menu-page">
+				<a href="#">Главная</a>
+				<span>/</span>
+				<a href="#">Часы и украшения</a>
+				<span>/</span>
+				<a href="#">Часы</a>
+				<span>/</span>
+				<a href="#">Adidas Z02 Process</a>
+			</div>
+			<h1 class="product-title">Adidas Z02 Process</h1>
+			<div class="product-artikle">Артикул: 99999-99</div>
+			<div class="product-presence">Наличие: Есть в наличии</div>
+			<form method="post">
+				<div class="product-variants">
+					<div class="product-options">
+					<div class="product-options__size">
+						<label class="option-label">Размер</label>
+							<select class="option-value">
+								<option value="S">S</option>
+								<option value="M">M</option>
+								<option value="L">L</option>
+								<option value="XL">XL</option>
+							</select>
+						</div>
+						<div class="product-options__color">
+							<label  class="option-lable">Цвет</label>
+							<select class="option-value">
+								<option value="gold">Золотой</option>
+								<option value="silver">Серебрянный</option>
+						
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="product-price">
+					<span class="price-old">140&#8364;</span>
+					<span class="price-current">100&#8364;</span>
+				</div>
+				<div class="product-control">
+					<div class="product-quantity">
+						<div class="quantity__btn">
+							<div class="quantity__btn-minus" onclick="minus();">-</div>
+							<input type="text" name="quantity" class="quantity-input" value="1">
+							<div class="quantity__btn-plus" onclick="plus();">+</div>
+						</div>
+					<button type="submit" class="btn-bucket">В корзину</button>
+					<button type="submit" class="btn-order">Заказ в 1 клик</button>
+					</div>
+				</div>
+			</form>
+			<div class="productInfo__tabs">
+				<div class="productInfo__tabs-acordion">
+					<div class="acordion-item">
+						<div class="acordion-item__header" >Описание</div>
+						<div class="acordion-item__body">
+							<p>Культовый бренд спортивной одежды&nbsp;adidas&nbsp;был основан в Германии Адольфом "Ади" Дасслером еще в 1949 году. Бренд специализируется на создании спортивной одежды, которая одновременно функциональна и имеет сознательно дизайнерский характер. Создавая модели разных стилей, начиная от стиля уличной моды и заканчивая ретро-фасонами,&nbsp;adidas&nbsp;гордится своей историей новаторских разработок и современным дизайном.</p>
+						</div>
+					</div>
+				</div>
+				<div class="productInfo__tabs-acordion">
+					<div class="acordion-item">
+						<div class="acordion-item__header">Харктеристики</div>
+							<div class="acordion-item__body">
+								<table>
+									<tr>
+										<td>Метка: </td>
+										<td>Хит продаж</td>
+									</tr>
+									<tr>
+										<td>Материал: </td>
+										<td>Нержавеющая сталь</td>			
+									</tr>
+									<tr>
+										<td>Бренд: </td>
+										<td>Adidas</td>							
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="productInfo__tabs-acordion">
+					<div class="acordion-item">
+						<div class="acordion-item__header" >Отзывы</div>
+						<div class="acordion-item__body">
+							<div class="acordion-item__body-content">
+								<div class="empty-notice">Пока нет отзывов</div>
+								<form method="post" class="acordion-item__review-form">
+									<h3>Оставить отзыв</h3>
+									<div class="acordion-item__notice">Все поля обязытельны к заполнению</div>
+									<div class="acordion-item__review-form-input">
+										<input type="text" name="author" placeholder="Введите ваше имя">
+									</div>
+									<div class="acordion-item__review-form-input">
+										<input type="email" name="email" placeholder="Email">
+									</div>
+									<div class="acordion-item__review-form-input">
+										<textarea name="review" rows="4" placeholder="Ваш отзыв" 
+										></textarea>
+									</div>
+									<div class="acordion-item__notice">Перед публикацией отзывы проходят модерацию</div>
+									<input type="submit" value="Отправить отзыв" class="productInfo__tabs-btn">
+								</form>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="productInfo__recent-view">
+			<div class="recent-view__title">Вы смотрели</div>
+			<div class="recent-view__viewed">
+				<div class="recent-view__viewed-items">
+					<div class="recent-view__viewed-item">
+						<div class="viewed-item__img"><img src="img/catalog-img/black-glasses1.jpg" alt="black-glasses1"></div>
+						<div class="viewed-item__description">
+							<p class="description-title">Black Round Sunglasses</p>
+							<p class="description-price">
+								<span class="old-price">25&#8364;</span>
+								<span class="current-price">15&#8364;</span>
+							</p>
+						</div>
+					</div>
+					<div class="recent-view__viewed-item">
+						<div class="viewed-item__img"><img src="img/catalog-img/earring-anchor1.jpg"  alt="earring-anchor1"></div>
+						<div class="viewed-item__description">
+							<p class="description-title">Simon Carter</p>
+							<p class="description-price">
+							<span class="current-price">35&#8364;</span>
+						</p>
+						</div>
+					</div>
+					<div class="recent-view__viewed-item">
+						<div class="viewed-item__img"><img src="img/catalog-img/shoes1.jpg" alt="shoes1"></div>
+						<div class="viewed-item__description">
+							<p class="description-title">Zip cowboy ankle boots</p>
+							<p class="description-price">
+								<span class="current-price">99&#8364;</span>
+							</p>
+						</div>
+					</div>
+					<div class="recent-view__viewed-item">
+						<div class="viewed-item__img"> <img src="img/catalog-img/blue-ring1.jpg" alt="blue-ring1"></div>
+						<div class="viewed-item__description">
+							<p class="description-title">Serge DeNimes Dove</p>
+							<p class="description-price">
+								<span class="old-price">85&#8364;</span>
+								<span class="current-price">70&#8364;</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__wrapper-items">
+					<div class="footer__wrapper-item">Покупателям
+					<ul class="footer__wrapper-links">
+						<li><a href="delivery.html"> Доставка</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Возврат товара</a></li>
+						<li><a href="#">Личный кабинет</a></li>
+					</ul>
+					</div>
+				</div>
+			    <div class="footer__wrapper-items">
+			    	<div class="footer__wrapper-item">Информация
+					<ul class="footer__wrapper-links">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+						<li><a href="#">Обратная связь</a></li>
+					</ul>
+					</div>
+				</div>
+				<div class="footer__wrapper-items">
+					<ul class="footer__wrapper-social">
+						<li><a href="https://twitter.com"> <i class="fab fa-twitter"></i></a></li>
+						<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">Wirl X <i class="far fa-copyright"></i> 202</div>
+	</div>
+	<script src="plugins/slick-1.8.1/slick/slick.min.js"></script>
+	<script src="scripts/script.js"></script>
+	</div>
+	
+</body>
+</html>
